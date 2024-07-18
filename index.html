@@ -1,25 +1,165 @@
+<!--
+**Día 15:**
+
+- **Tema: Desarrollo del Proyecto**
+    - **Actividad:**
+        - Implementa el diseño utilizando HTML, CSS, Flexbox y CSS Grid.
+        - Tareas específicas:
+            - Crea la estructura HTML básica.
+            - Aplica estilos iniciales y establece el layout principal con CSS Grid.
+            - Usa Flexbox para las secciones que lo requieran, como la barra de navegación.
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ALFRED</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Monomaniac+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="foto.png">
+    <title>Portolio Alfredo Rivera</title>
 </head>
-<body>
+<body class="body">
 
-  <header>
-    
-  </header>
-
-  <section>
 
     
-  </section>
+<!-- ----------------- HEADER-->
+    <header class="header">
+
+        <input type="checkbox" class="header__checkbox" id="open-menu">
+        <label for="open-menu" class="header__open-nav-button">=</label>
+
+        <nav class="header__nav">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="principal">
+        <div class="principal__content">
+            <h1>ALFREDO</h1>
+            <p>Programador Full Stack</p>
+            <a href="#about"><button>About</button></a>
+        </div>
+    </div>
+
+    
+<!-- ----------------- ABOUT-->
+    <div id="about" class="about">
+        <div class="about__title">About</div>
+        <div class="about__img"></div>
+        <div class="about__description">En búsqueda de nuevas oportunidades laborales para desarrollarme en un entorno dinámico. Soy una persona adaptable y me gusta la idea de enfrentar nuevos desafíos en diferentes áreas laborales. </div>
+
+        <div class="about__skill">
+            <div class="about__skill-name">HTML</div>
+            <div class="about__skill-bar">
+                <div class="about__bar-progreso90">
+                    90%
+                </div>
+            </div>
+
+            <div class="about__skill-name">CSS</div>
+            <div class="about__skill-bar">
+                <div class="about__bar-progreso80">
+                    80%
+                </div>
+            </div>
+
+            <div class="about__skill-name">JS</div>
+            <div class="about__skill-bar">
+                <div class="about__bar-progreso10">
+                    10%
+                </div>
+            </div>
+        </div>   
+    </div>
 
 
-  <footer>
+<!-- ----------------- PROYECT-->
+    <div id="project" class="project">
+        
+        <div class="project__title">Project</div>
 
-  </footer>
-  
+        <div class="project__grid">   
+            
+            <div class="project__item">
+                <div class="project__item-image1"></div>
+                <div class="project__name">Proyecto 1</div>
+            </div>
+            <div class="project__item">
+                <div class="project__item-image1"></div>
+                <div class="project__name">Proyecto 1</div>
+            </div>
+            <div class="project__item">
+                <div class="project__item-image1"></div>
+                <div class="project__name">Proyecto 1</div>
+            </div>
+
+            <div class="project__item">
+                <div class="project__item-image1"></div>
+                <div class="project__name">Proyecto 1</div>
+            </div>
+            <div class="project__item">
+                <div class="project__item-image1"></div>
+                <div class="project__name">Proyecto 1</div>
+            </div>
+            
+            <div class="project__item">
+                <div class="project__item-image1"></div>
+                <div class="project__name">Proyecto 1</div>
+            </div>
+
+            <div class="project__item">
+                <div class="project__item-image1"></div>
+                <div class="project__name">Proyecto 1</div>
+            </div>
+            <div class="project__item">
+                <div class="project__item-image1"></div>
+                <div class="project__name">Proyecto 1</div>
+            </div>
+
+        </div>
+    </div>
+
+<!-- ----------------- CONTACT-->
+    <div id="contact" class="contact">
+        <form class="contact__form" action="">
+            
+            <div class="contact__title">Contact</div>
+            <label class="contact__label" for="">Nombre</label>
+            <input class="contact__input" placeholder="Ingresa tu nombre..." type="text">
+            
+            <label class="contact__label" for="">Correo</label>
+            <input class="contact__input" placeholder="Ingresa tu nombre..." type="email">
+
+            <label class="contact__label" for="">Mensaje</label>
+            <textarea class="contact__textarea" placeholder="Comentame bro..." id=""></textarea>
+
+            <button class="contact__button">Enviar</button>
+        </form>
+    </div>
+
+
+    
+<!-- ----------------- FOOTER-->
+    <footer class="footer">
+
+        <nav class="footer__nav">
+            <li><a href="https://www.instagram.com/alfred__rivera/" target="_blank"><img src="icon/inst.png" alt="">Instagram</a></li>
+            <li><a href="https://www.tiktok.com/@alfred.editor" target="_blank"><img src="icon/tik-tok.png" alt="">Tik Tok</a></li>
+            <li><a href="https://www.youtube.com/@Alfred_Rivera" target="_blank"><img src="icon/youtube.png" alt="">Youtube</a></li>
+        </nav>
+
+        <p class="footer__description">
+            @Copyright by Alfredo Rivera
+        </p>
+    </footer>
+
+
 </body>
 </html>
