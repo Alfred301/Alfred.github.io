@@ -297,12 +297,15 @@
     
 }
 
-.project__item{
+.project__item a{
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-decoration: none;
+    transition: box-shadow 0.5s ease;
+    border-radius: 20px;
 }
 
 .project__name{
@@ -310,19 +313,33 @@
     border: #000 solid 3px;
     width: 100%;
     text-align: center;
-    border-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: background-color 0.5s ease;
+}
+
+.project__item a:hover{
     box-shadow: 0 0 20px rgb(57, 54, 54);
 }
 
-.project__image1{
+.project__item a:hover .project__name{
+    background-color: rgb(57, 54, 54);
+    color: #ffffff;
+}
+
+.project__image{
     height: 100%;
-    width: 100%;
-    background-image: url("work/1.LandinPortfolio.png");  
+    width: 100%;  
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgb(57, 54, 54);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+.--image1{
+    background-image: url("work/1.Boton.png");
 }
 
 /*-----------------------------Project Query*/
