@@ -342,6 +342,18 @@
     background-image: url("work/1.Boton.png");
 }
 
+.--image2{
+    background-image: url("work/2.TodoList.png");
+}
+
+.--image3{
+    background-image: url("work/3.JuegoDeCartas.png");
+}
+
+.--image4{
+    background-image: url("work/4.Calculadora.png");
+}
+
 /*-----------------------------Project Query*/
 
 @media screen and (min-width: 650px){
