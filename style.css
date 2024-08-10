@@ -157,7 +157,7 @@
 }
 
 .about__img{
-    background-image: url("foto.png");
+    background-image: url("img/foto.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -339,19 +339,23 @@
 
 
 .--image1{
-    background-image: url("work/1.Boton.png");
+    background-image: url("img/01.Julio2024/TodoList.png");
 }
 
 .--image2{
-    background-image: url("work/2.TodoList.png");
+    background-image: url("img/01.Julio2024/JuegoDeCartas.png");
 }
 
 .--image3{
-    background-image: url("work/3.JuegoDeCartas.png");
+    background-image: url("img/02.Agosto2024/Calculadora.png");
 }
 
 .--image4{
-    background-image: url("work/4.Calculadora.png");
+    background-image: url("img/02.Agosto2024/RelojDigital.png");
+}
+
+.--image5{
+    background-image: url("img/02.Agosto2024/BBCNews.png");
 }
 
 /*-----------------------------Project Query*/
