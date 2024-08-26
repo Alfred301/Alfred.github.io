@@ -20,11 +20,11 @@
         <input type="checkbox" class="header__checkbox" id="open-menu">
         <label for="open-menu" class="header__open-nav-button">=</label>
 
-        <nav class="header__nav">
+        <nav class="header__nav" id="header__navigation">
             <ul>
-                <li><a href="#about">Sobre Mi</a></li>
-                <li><a href="#project">Proyectos</a></li>
-                <li><a href="#contact">Contacto</a></li>
+                <li><a href="#about" id="header__nav--SobreMi">Sobre Mi</a></li>
+                <li><a href="#project" id="header__nav--Proyectos">Proyectos</a></li>
+                <li><a href="#contact" id="header__nav--Contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -37,32 +37,59 @@
         </div>
     </div>
 
+
     
 <!-- ----------------- ABOUT-->
     <div id="about" class="about">
         <div class="about__title">Sobre Mi</div>
-        <div class="about__img"></div>
+        <div class="about__foto"></div>
         <div class="about__description">En búsqueda de nuevas oportunidades laborales para desarrollarme como programador Full Stack. Me considero una persona constante y responsable, tengo en mente grandes proyectos propios y deseo aportar todo mi conocimiento y tiempo en los proyectos de la empresa con el fin de mejorar cada día como programador.</div>
 
+
+        
+
         <div class="about__skill">
+
+            <div class="about__skill-name">Visual Studio</div>
+            <div class="about__skill-bar">
+                <div class="about__bar-progreso100">
+                    100%
+                </div>
+            </div>
+
+            <div class="about__skill-name">Git</div>
+            <div class="about__skill-bar">
+                <div class="about__bar-progreso100">
+                    100%
+                </div>
+            </div>
+
+            <div class="about__skill-name">Git Hub</div>
+            <div class="about__skill-bar">
+                <div class="about__bar-progreso100">
+                    100%
+                </div>
+            </div>
+
+
             <div class="about__skill-name">HTML</div>
             <div class="about__skill-bar">
-                <div class="about__bar-progreso90">
-                    90%
+                <div class="about__bar-progreso100">
+                    100%
                 </div>
             </div>
 
             <div class="about__skill-name">CSS</div>
             <div class="about__skill-bar">
-                <div class="about__bar-progreso90">
-                    90%
+                <div class="about__bar-progreso100">
+                    100%
                 </div>
             </div>
 
             <div class="about__skill-name">JS</div>
             <div class="about__skill-bar">
-                <div class="about__bar-progreso80">
-                    80%
+                <div class="about__bar-progreso20">
+                    20%
                 </div>
             </div>
         </div>   
@@ -75,6 +102,8 @@
         
         <div class="project__title">Proyectos</div>
 
+        
+        <!--LISTA DE PROYECTOS-->
         <div class="project__grid">   
             
             <div class="project__item">
@@ -109,55 +138,51 @@
             <div class="project__item">
                 <a href="https://alfred301.github.io/Portafolio/02.Agosto2024/PaginaNoticias/index.html" target="_blank">
                 <div class="project__image --image5"></div>
-                <div class="project__name">Pagina BBC News Mundo</div>
+                <div class="project__name">BBC News Mundo</div>
                 </a>
             </div>
 
-            
             <div class="project__item">
-                <a href="">
+                <a href="https://alfred301.github.io/Portafolio/02.Agosto2024/PiedraPapelTijera/index.html" target="_blank">
                 <div class="project__image --image6"></div>
-                <div class="project__name">Projecto 7</div>
+                <div class="project__name">Piedra - Papel - Tijera</div>
                 </a>
             </div>
 
-            
             <div class="project__item">
-                <a href="">
+                <a href="https://alfred301.github.io/Portafolio/02.Agosto2024/ConvertirMoneda/index.html" target="_blank">
                 <div class="project__image --image7"></div>
-                <div class="project__name">Projecto 8</div>
+                <div class="project__name">Convertir Moneda</div>
                 </a>
             </div>
+
             <div class="project__item">
-                <a href="">
-                <div class="project__image --image7"></div>
-                <div class="project__name">Projecto 8</div>
+                <a href="https://alfred301.github.io/Portafolio/02.Agosto2024/MarvelModal/index.html" target="_blank">
+                <div class="project__image --image8"></div>
+                <div class="project__name">Marvel Modal</div>
                 </a>
-            </div>
+            </div>         
 
         </div>
     </div>
 
 <!-- ----------------- CONTACT-->
     <div id="contact" class="contact">
-        <form class="contact__form" action="">
+        <form id="contact__form" class="contact__form">
             
             <div class="contact__title">Contacto</div>
             <label class="contact__label" for="">Nombre</label>
-            <input class="contact__input" placeholder="Ingresa tu nombre..." type="text">
+            <input id="contact__input1" class="contact__input" placeholder="Ingresa tu nombre..." type="text">
             
             <label class="contact__label" for="">Correo</label>
-            <input class="contact__input" placeholder="Ingresa tu nombre..." type="email">
+            <input id="contact__input2" class="contact__input" placeholder="Ingresa tu nombre..." type="email">
 
             <label class="contact__label" for="">Mensaje</label>
-            <textarea class="contact__textarea" placeholder="Comentame bro..." id=""></textarea>
+            <textarea id="contact__input3" class="contact__textarea contact__input" placeholder="Ingresa tu mensaje..." id=""></textarea>
 
             <button class="contact__button">Enviar</button>
         </form>
-    </div>
-
-
-    
+    </div> 
 <!-- ----------------- FOOTER-->
     <footer class="footer">
 
