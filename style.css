@@ -451,9 +451,12 @@ html {
 }
 
 .--image11{
-    background-image: url("img/03.Septiembre2024/GeneradorDePalabras.png");
+    background-image: url("img/03.Septiembre2024/GeneradorPalabras.png");
 }
 
+.--image12{
+    background-image: url("img/03.Septiembre2024/GeneradorPasswords.png");
+}
 
 /*-----------------------------Project Query*/
 
